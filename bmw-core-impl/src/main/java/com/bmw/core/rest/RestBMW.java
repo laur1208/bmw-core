@@ -15,14 +15,7 @@ public class RestBMW implements BMW {
     public RestBMW() {
         this(RestBMW.DEFAULT);
     }
-    public RestBMW(final String token) {
-        this(
-                RestBMW.DEFAULT.header(
-                        "Authorization",
-                        String.format("token %s", token)
-                )
-        );
-    }
+
     public RestBMW(final Request req) {
         this.request = req;
     }
