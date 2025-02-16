@@ -8,6 +8,7 @@ public class StoredCar implements Car {
 
     private final Integer id;
 
+    @Override
     public Integer id() {
         return this.id;
     }

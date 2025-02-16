@@ -11,6 +11,7 @@ public class BMWStorage implements Storage {
         this.database = database.connect();
     }
 
+    @Override
     public Cars cars() {
         return new BmwCars(this, this.database);
     }

@@ -13,10 +13,12 @@ public class BmwCars implements Cars {
 
     private final Database database;
 
+    @Override
     public Car insert(Car car) {
         return null;
     }
 
+    @Override
     public Car getById(Integer id) {
         return new StoredCar(id);
     }
