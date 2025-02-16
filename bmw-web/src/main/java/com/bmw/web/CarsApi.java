@@ -2,6 +2,7 @@ package com.bmw.web;
 
 import com.bmw.api.BMW;
 import com.bmw.api.Car;
+import com.bmw.core.rest.RestBMW;
 import com.bmw.web.output.JsonCar;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.MediaType;

@@ -20,6 +20,7 @@ public class RestCar implements Car {
     public Integer id() {
         Integer id = null;
         try {
+            System.out.println("this.request.uri() = " + this.request.uri());
             id = this.request.fetch()
                     .as(JsonResponse.class)
                     .json()

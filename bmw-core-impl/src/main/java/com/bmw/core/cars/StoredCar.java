@@ -10,6 +10,6 @@ public class StoredCar implements Car {
 
     @Override
     public Integer id() {
-        return this.id;
+        return this.id + 65;
     }
 }

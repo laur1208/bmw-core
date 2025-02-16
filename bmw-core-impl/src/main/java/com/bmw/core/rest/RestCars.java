@@ -9,11 +9,9 @@ import lombok.RequiredArgsConstructor;
 public class RestCars implements Cars {
 
     private Request request;
-    RestCars(final Request req, final Integer id) {
-        this.request = req.uri().path("/cars").back();
-    }
 
-    public RestCars(Request request) {
+    public RestCars(Request req) {
+        this.request = req.uri().path("/cars").back();
     }
 
     @Override
